@@ -89,13 +89,15 @@ image::cs-globex-src-index-html.png[]
 . From the top menu, click *File > Save*
 +
 image::cs-globex-src-save-1.png[]
-. Click the source control icon on the left side of the screen
+. Click the source control icon
+image::vscode-source-code-icon.png[]
+on the left side of the screen
 . Notice that the *index.html* file is shown under the *Changes* section.  Click the *+* sign to the right of the file name.
 This will add the file to the Git staging area.
 . Next enter some text in the *Commit* text box, such as *globex udpate 1*, and click *Commit*.
 This saves your changes to the local repository.
 . Next click the *Sync Changes* button to push your change to the remote repository.
-. Switch back to *Openshift* and click *Pipelines > Pipelines* from the left menu.  Ensure that your project is set to *ci*.
+. Switch back to the *Openshift Console* and click *Pipelines > Pipelines* from the left menu.  Ensure that your project is set to *ci*.
 . Notice that a new instance of your pipeline run has started.
 +
 image::ocp-pipeline-run-2.png[]
@@ -113,7 +115,7 @@ image::ocp-pipeline-run-2-error.png[]
 
 . Run the below command on your terminal
 +
-[source, bash]
+[source, role="execute"]
 ----
 oc new-app https://github.com/openshift/ruby-hello-world.git#beta4 -n globex
 ----
