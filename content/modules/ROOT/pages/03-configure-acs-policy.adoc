@@ -115,7 +115,7 @@ image::ocp-pipeline-run-2-error.png[]
 
 . Run the below command on your terminal
 +
-[source, bash]
+[source, role="execute"]
 ----
 oc new-app https://github.com/openshift/ruby-hello-world.git#beta4 -n globex
 ----
