@@ -4,7 +4,7 @@ DevSecOps tasks that are typically performed when securing your SDLC process.
 
 The pipeline, called app-globex-ui-pipeline, is set up to build a container image for the UI of an online retail application called Globex and is triggered once changes to the UI source code have been pushed to its Gitea repository.   The remaining components of this application are pre-built and deployed alongside our container image to our development cluster.
 
-The pipeline logic, which includes the yaml manifest for the pipeline and tasks, is stored in a Gitea repository alongside the application and infrastructure code.  This is known as the pipeline-as-code pattern.  These yaml manifests are eventually deployed to the Hub Cluster using ArgoCD when the demo environment is ordered.
+The pipeline logic, which includes the yaml manifest for the pipeline and tasks, is stored in a Gitea repository alongside the application and infrastructure code.  This is known as the pipeline-as-code pattern.  These yaml manifests are eventually deployed to the Hub Cluster using Argo CD when the demo environment is ordered.
 
 For the purposes of time, we have a triggered pipeline for us to examine.
 
@@ -89,4 +89,4 @@ image::pipeline-update-dev-manifest.png[]
 
 This task is responsible for initiating the deployment of our new image to the development environment.  Note, the deployment of the image is handled by the CD process so all we need to do is somehow let the CD process know that a new image is available to deploy.  We do this by updating the associated deployment manifest file stored in a Gitops repository directly to the main branch.  This repository's main branch is constantly monitored by the CD process for any changes.
 
-Once the deployment manifest and branch is updated, ArgoCD detects a change was made and then syncs the changes to the dev environment.  This way the CI process is isolated and removed entirely from the deployment process.
+Once the deployment manifest and branch is updated, Argo CD detects a change was made and then syncs the changes to the dev environment.  This way the CI process is isolated and removed entirely from the deployment process.
