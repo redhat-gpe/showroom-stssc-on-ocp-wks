@@ -71,7 +71,7 @@ The *acs-image-scan* uses the *roxctl* CLI to return the components and vulnerab
 
 image::pipeline-scan-export-sbom.png[]
 
-This task is responsible for scanning any vulnerabilities that exist in our SBOM and exports our SBOM to a externall accessible repository.  For scanning, this task uses a tool called Grype which is a vulnerability scanner for container images and filesystems.
+This task is responsible for scanning any vulnerabilities that exist in our SBOM and exports our SBOM to a externally accessible repository.  For scanning, this task uses a tool called Grype which is a vulnerability scanner for container images and filesystems.
 
 Grype generates an output viewable in the logs highlighting any vulnerabilities identified in the scan.  You may decide to act on it or ignore it.
 
