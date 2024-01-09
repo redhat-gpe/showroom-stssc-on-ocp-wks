@@ -14,7 +14,7 @@ NOTE: You can find this repository in your Gitea instance at {gitea_console_url}
 . Add requests of *100m cpu* and *200Mi memory*
 . Add limits of *200m cpu* and *400Mi memory*
 . Commit your changes back to the repository
-. Trigger the pipeline as mentioned previously.
+. Trigger the pipeline as mentioned previously by making a change in the *index.html* file.
 . Switch back to {openshift_console_url}[Openshift,window=_blank] and click *Pipelines > Pipelines* from the left menu.  Notice that another instance of your pipeline run has started.  Wait for it to complete.
 
 == Examine pipeline
