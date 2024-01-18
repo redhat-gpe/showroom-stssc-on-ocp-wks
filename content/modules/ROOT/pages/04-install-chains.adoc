@@ -54,6 +54,8 @@ image::cs-globex-src-index-html.png[]
 +
 image::cs-globex-src-save-2.png[]
 . Click the source control icon on the left side of the screen
++
+image::cs-source-code-icon.png[]
 . Notice that the *index.html* file is shown under the *Changes* section.  Click the *+* sign to the right of the file name.
 This will add the file to the Git staging area.
 . Next enter some text in the *Commit* text box, such as *globex update 2*, and click *Commit*.
