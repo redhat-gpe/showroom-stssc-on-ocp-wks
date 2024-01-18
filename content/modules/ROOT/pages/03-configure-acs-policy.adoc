@@ -90,7 +90,7 @@ image::cs-globex-src-index-html.png[]
 +
 image::cs-globex-src-save-1.png[]
 . Click the source control icon
-image::vscode-source-code-icon.png[]
+image::cs-source-code-icon.png[]
 on the left side of the screen
 . Notice that the *index.html* file is shown under the *Changes* section.  Click the *+* sign to the right of the file name.
 This will add the file to the Git staging area.
