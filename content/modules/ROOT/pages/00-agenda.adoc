@@ -7,7 +7,7 @@
 == Introduction and Challenge Overview
 
 *Recap of the current security challenges with similar-looking malicious container images.*
-*Overview of how these challenges led us to embrace Cosign and Tekton Chains.*
+*Overview of how these challenges led us to embrace https://docs.sigstore.dev/signing/quickstart[Cosign,window=_blank] and Tekton Chains.*
 
 == Deep Dive into Cosign and Sigstore
 
